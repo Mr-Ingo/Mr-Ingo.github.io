@@ -1,0 +1,226 @@
+@media screen and (min-width: 992px){
+  .container {
+    height: 100vh;
+    padding: 0;
+  }
+  footer{
+    background: #000 url(../img/2-layers.png) no-repeat left top / cover;
+  }
+  header .container {
+    padding: 0;
+    
+  }
+  header {
+    height: 100vh;
+  }
+  .triangle_block {
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+  }
+  .triangle{
+  display: inline-block;
+  position: absolute;
+  top: -83vh;
+  right: -44vh;
+  color: #fff;
+  font-size: 210vh ;
+  -webkit-transform: scaleY(0.7);
+          transform: scaleY(0.7);
+  text-shadow: rgba(34, 52, 73, 0.18) 27px 21px 190px,
+  rgba(34, 52, 73, 0.18) -27px 27px 190px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  }
+  header h2 {
+    width: 346px;
+    position: absolute;
+    top: 21vh;
+    right: 37vh;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 35px;
+    padding-top: 180px;
+    margin-right: 78px;
+  }
+
+  header h1:nth-child(2) {
+    position: absolute;
+    top: 21vh;
+    right: 37vh;
+    font-size: 63px;
+    font-weight: 700;
+    margin-right: 195px;
+  }
+  header h1:nth-child(3) {
+    position: absolute;
+    top: 21vh;
+    right: 37vh;
+    font-size: 63px;
+    font-weight: 700;
+    padding-top: 87px;
+  }
+  header span {
+    position: absolute;
+    top: 21vh;
+    right: 37vh;
+    padding-top: 180px;
+    padding-right: 166px;
+  }
+  header .button {
+    position: absolute;
+    top: 21vh;
+    right: 37vh;
+    margin-top: 294px;
+    margin-right: 200px;
+    z-index: 1;
+  }
+  header .date {
+    display: block;
+    position: absolute;
+    top: 21vh;
+    right: 37vh;
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 43px;
+  }
+  header .Nowedo {
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    margin-top: -107px;
+    width: 20%;
+    font-size: 27px;
+    font-weight: 500;
+  }
+  .navigation {
+    display: block;
+  }
+  header .burger {
+    display: block;
+    background: url(../img/burger.png) no-repeat center center / cover;
+    position: absolute;
+    width: 27px;
+    height: 10px;
+    z-index: 10;
+    top: 5vh;
+    right: 2%;
+  }
+  footer .burger {
+    display: block;
+    background: url(../img/burger_.png) no-repeat center center / cover;
+    position: absolute;
+    width: 27px;
+    height: 10px;
+    z-index: 10;
+    top: 5vh;
+    right: 2%;
+  }
+  header .mouse {
+    display: block;
+    background: url(../img/mouse_копия_5.png) no-repeat center center / cover;
+    position: absolute;
+    width: 17px;
+    height: 24px;
+    z-index: 10;
+    bottom: 3%;
+    left: 2%;
+  }
+  footer .mouse {
+    display: block;
+    background: url(../img/mouse_копия_4.png) no-repeat center center / cover;
+    position: absolute;
+    width: 17px;
+    height: 24px;
+    z-index: 10;
+    bottom: 3%;
+    left: 2%;
+  }
+  .social_networks {
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+    z-index: 10;
+  }
+  .social_networks a{
+    display: inline-block;
+    margin-left: 20px;
+  }
+  footer .Nowedo{
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    margin-top: -107px;
+    width: 20%;
+    font-size: 27px;
+    font-weight: 500;
+  }
+  footer .arrows {
+    font-size: 10px;
+  }
+  footer .arrow_right span {
+    transform: translate(-41px, -1px) scaleX(21);
+  }
+  footer .arrow_left span {
+    transform: translate(28px, -1px) scaleX(21);
+}
+}
+@media screen and (max-height: 800px) and (min-width: 992px){
+  header h2 {
+    width: 346px;
+    position: absolute;
+    top: 11vh;
+    right: 17vh;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 35px;
+    padding-top: 180px;
+    margin-right: 78px;
+  }
+
+  header h1:nth-child(2) {
+    position: absolute;
+    top: 11vh;
+    right: 17vh;
+    font-size: 63px;
+    font-weight: 700;
+    margin-right: 247px;
+  }
+  header h1:nth-child(3) {
+    position: absolute;
+    top: 11vh;
+    right: 17vh;
+    font-size: 63px;
+    font-weight: 700;
+    padding-top: 87px;
+    margin-right: 52px;
+  }
+  header span {
+    position: absolute;
+    top: 11vh;
+    right: 17vh;
+    padding-top: 180px;
+    padding-right: 166px;
+  }
+  header .button {
+    position: absolute;
+    top: 11vh;
+    right: 17vh;
+    margin-top: 294px;
+    margin-right: 197px;
+  }
+  header .date {
+    display: block;
+    position: absolute;
+    top: 11vh;
+    right: 17vh;
+    margin-right: 60px;
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 43px;
+  }
+}

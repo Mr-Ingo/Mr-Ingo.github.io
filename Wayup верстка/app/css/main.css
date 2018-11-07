@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: #D2D2D2 url(https://www.toptal.com/designers/subtlepatterns/patterns/houndstooth-pattern.png);
+	font: 1em Arial, Helvetica, sans-serif;
+	color: #222;
+}
+.clearfix:after {
+	content: '.';
+	display: table;
+	width: 100px;
+	clear: both;
+}
+header {
+	background: url(../img/first-bg.jpg) no-repeat center top / cover;
+	padding-bottom: 160px;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.logo {
+	margin-top: 41px;
+	float: left;
+}
+nav {
+	float: right;
+	margin-top: 50px;
+}
+.menu {
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+.menu li {
+	float: left;
+	display: block;
+	margin-right: 41px;
+}
+.menu a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.titles_first {
+	font-size: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 180px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 75px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;	
+	margin: 15px;
+}
+
+.button {
+	background: #fed136 ;
+	color: #484543;
+	border-radius: 3px;
+	display: block;
+	width: 240px;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 50px;
+}
+
+.title {
+	padding-top: 115px;
+}
+
+.title h2 {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.title p {
+	color: #777;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 5px;
+}
+.services {
+	margin-top: 50px;
+}
+
+.services_item {
+	width: 270px;
+	float: left;
+	text-align: center;
+}
+
+.services_item h3 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.services_item p {
+	color: #777;
+	font-size: 14px;
+	line-height: 1.55em;
+}
+
+.services_item:last-child {
+	float: right;
+}
+.services_item:nth-child(2) {
+	margin-left: 60px;
+}
+#portfolio {
+	background: #f7f7f7;
+}
+#services {
+	padding-bottom: 120px;
+}
+.works {
+	margin-top: 70px;
+}
+.works img {
+	float: left;
+}
+.works img:nth-child(2) {
+	margin-left: 31px;+
+}
+.works img:last-child {
+	float: right;
+}
+
+.aboutus_item{
+	width: 550px;
+	height: 189px;
+	margin-top: 77px;
+}
+.aboutus {
+	padding-bottom: 75px;
+}
+.aboutus .left{
+	text-align: right;
+	margin-left: 5%;
+}
+.aboutus .right{
+	text-align: left;
+	margin-left: 36%;
+}
+.aboutus img {
+	padding: 0 38px;
+}
+.aboutus .left img {
+	float: right;
+}
+.aboutus .right img {
+	float: left;
+}
+.aboutus h3 {
+	font-size: 18px;
+	margin: 2px;
+}
+.aboutus p {
+	color: #777;
+	font-size: 14px;
+	line-height: 1.55em;
+}
+.footer {
+	color: #777;
+	font-size: 14px;
+	line-height: 1.55em;
+	text-align: center;
+	padding-bottom: 10px;
+}
