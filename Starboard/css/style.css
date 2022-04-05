@@ -1807,7 +1807,7 @@ a{
     z-index: 1;
 }
 
-.mainHeaderLogo::after{
+.innerPage .mainHeaderLogo::after{
     position: absolute;
     z-index: 0;
     content: '';
@@ -1821,7 +1821,7 @@ a{
     filter: blur(200px);
 }
 
-.mainHeaderLogo::before{
+.innerPage .mainHeaderLogo::before{
     position: absolute;
     z-index: 0;
     content: '';
