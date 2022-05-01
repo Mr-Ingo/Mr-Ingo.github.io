@@ -1,0 +1,1701 @@
+@font-face{
+    font-family: 'Droid Serif';
+    font-weight: 400;
+    font-style: italic;
+
+    font-display: swap;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local('Droid Serif Italic'), local('DroidSerif-Italic'),
+    /* Если не получилось, загрузит woff2 */
+    url('../fonts/droidserifitalic.woff2') format('woff2'),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    url('../fonts/droidserifitalic.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Droid Serif';
+    font-weight: 400;
+    font-style: normal;
+
+    font-display: swap;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local('Droid Serif'), local('DroidSerif'),
+    /* Если не получилось, загрузит woff2 */
+    url('../fonts/droidser.woff2') format('woff2'),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    url('../fonts/droidser.woff') format('woff');
+}
+
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.visuallyHidden:not(:focus):not(:active),
+input[type='checkbox'].visuallyHidden,
+input[type='radio'].visuallyHidden{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    clip-path: inset(100%);
+}
+
+body{
+    width: 1920px;
+    margin: 0 auto;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+    background-color: #fff;
+    line-height: 24px;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.blueTitle{
+    font-size: 48px;
+    color: #7492ec;
+    font-weight: 300;
+    margin: 0;
+    line-height: 28px;
+}
+
+.normalTitle{
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 36px;
+    color: #000000;
+    margin: 0;
+}
+
+
+
+.info .timeRange::before{
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    background-image: url('../img/time icon.png');
+    background-repeat: no-repeat;
+}
+
+.info .difficulty::before{
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    background-image: url('../img/difficulty icon.png');
+    background-repeat: no-repeat;
+}
+
+.info .teacher::before{
+    position: absolute;
+    content: '';
+    width: 11px;
+    height: 13px;
+    top: 0;
+    left: 0;
+    background-image: url('../img/teacher icon.png');
+    background-repeat: no-repeat;
+}
+
+.info .share a::before{
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 13px;
+    top: 0px;
+    left: 0;
+    background-image: url('../img/share icon.png');
+    background-repeat: no-repeat;
+}
+
+.video img{
+    display: block;
+    border-radius: 10px;
+}
+
+.buttonSliderClasses{
+    cursor: pointer;
+    position: absolute;
+    top: 203px;
+    width: 9px;
+    height: 14px;
+    background: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-image: url('../img/arrow 2.png');
+
+}
+
+.buttonSliderClasses.arrowLeft{
+    left: -50px;
+}
+
+.buttonSliderClasses.arrowRight{
+    right: -46px;
+    transform: rotate(180deg);
+}
+
+.getFreeTrial{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+    width: 198px;
+    height: 40px;
+    padding: 14px 28px;
+    background-color: #7492ec;
+    border-radius: 20px;
+    font-weight: 700;
+    line-height: 12px;
+}
+
+
+
+
+
+
+
+/* ----------------------------------------header------------------------------------------ */
+
+.mainHeader{
+    height: 980px;
+    background-image: url('../img/header homepage background.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 33px;
+}
+
+.mainNavigation{
+    margin: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainHeaderLogo{
+    width: 60px;
+    height: 63px;
+}
+
+.siteNavigation{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1542px;
+    justify-content: end;
+}
+
+.siteNavigation li{
+    margin-right: 30px;
+}
+
+.siteNavigation a{
+    color: #99aade;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.siteNavigation a:hover,
+.siteNavigationCurrent a{
+    color: #7492ec;
+}
+
+
+
+
+
+/* ---------------------------foreword-------------------- */
+
+.foreword{
+    margin-top: -150px;
+    background-image: url("../img/backgound image Everyone's Yoga.png");
+    background-repeat: no-repeat;
+    background-position: right 37px;
+    padding-bottom: 120px;
+}
+
+.foreword > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foreword p{
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+.everyoneYoga{
+    margin-top: 262px;
+}
+
+.everyoneYoga > p{
+    width: 570px;
+    margin-bottom: 42px;
+}
+
+.everyoneYoga > h3{
+    margin-bottom: 24px;
+}
+
+.everyoneYoga img{
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.greetings{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 107px;
+}
+
+.greetings li{
+    position: relative;
+    width: 470px;
+    padding-left: 94px;
+    margin-bottom: 50px;
+}
+
+.greetings li h3{
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 500;
+    margin: 0;
+}
+
+.balanceBodyAndMind::before{
+    content: '';
+    width: 70px;
+    height: 70px;
+    background: url("../img/Balance Body & Mind icon.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.weightLoss::before{
+    content: '';
+    width: 70px;
+    height: 70px;
+    background: url("../img/Weight Loss.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.meditationPractise::before{
+    content: '';
+    width: 70px;
+    height: 70px;
+    background: url("../img/Meditation Practice.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.freedom::before{
+    content: '';
+    width: 70px;
+    height: 70px;
+    background: url("../img/Yoga is a way to freedom.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.increasedEnergy::before{
+    content: '';
+    width: 70px;
+    height: 70px;
+    background: url("../img/Increased energy.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+/* --------------------------------------classes--------------------------------------- */
+
+.classes{
+    background-image: url('../img/decoration flower our classes.png'),
+                      url('../img/background our classes.jpg');
+    background-repeat: no-repeat;
+    background-color: #f1f3f8;
+    background-position: top, left top;
+    padding-top: 126px;
+    min-height: 794px;
+}
+
+.classes > .container{
+    position: relative;
+}
+
+.classes > .container > a{
+    display: block;
+    text-align: center;
+}
+
+.classesItems{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 82px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.classesItems li{
+    width: 270px;
+    /* grid-row: 1 / 5; */
+    display: grid;
+    grid-template-rows: 200px 46px 65px min-content;
+    grid-template-rows: subgrid;
+}
+
+.classesItems p{
+    margin: 0;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+.linkClassSingle{
+    margin: 0;
+    font-size: 18px;
+    color: #7492ec;
+    font-weight: 500;
+    margin-top: 27px;
+    text-decoration: none;
+    
+}
+
+.classesItems img{
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+.classesItems .info{
+    color: #999999;
+    margin-top: 44px;
+    font-size: 13px;
+    line-height: 14px;
+}
+
+.classesItems .info p{
+    margin-bottom: 13px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.classesItems .info p:last-child{
+    margin-bottom: 0;
+}
+
+.classesItems .description{
+    margin-top: 62px;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------sale------------------------------------------ */
+
+.sale {
+    padding: 120px 0;
+}
+
+.sale h2{
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.sale p{
+    margin: 0;
+    width: 448px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.sale .getFreeTrial{
+    display: block;
+    width: 297px;
+    text-align: center;
+    margin: 0 auto;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 14px 28px;
+    background-color: #7492ec;
+    border-radius: 20px;
+    font-weight: 700;
+    line-height: 12px;
+    margin-bottom: 80px;
+}
+
+.sale .illustrations{
+    display: grid;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sale .illustrations img{
+    display: block;
+  border-radius: 5px;
+}
+
+.sale .illustrations li:nth-child(4){
+  grid-column: 1/3;
+}
+
+
+
+
+
+
+/* --------------------------------------aboutInstructors------------------------- */
+
+.aboutInstructors{
+    color: #ffffff;
+    padding: 137px 0 106px 0;
+    background-image: url('../img/aboutInstructors background.png');
+    background-color: #7492ec;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aboutInstructors h2{
+    text-align: center;
+    color: inherit;
+    margin-bottom: 21px;
+}
+
+.aboutInstructors p{
+    width: 587px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 42px;
+}
+
+.aboutInstructors .meetTeachers{
+    position: relative;
+    width: 126px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: inherit;
+    line-height: 36px;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+.aboutInstructors .meetTeachers::after{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    margin-left: -20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/arrow.png');
+}
+
+
+
+
+
+
+
+/* ----------------------------instructors------------------------- */
+
+.instructors{
+    padding: 120px 0;
+}
+
+.instructorsItems{
+    display: grid;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 80px);
+    row-gap: 60px;
+    column-gap: 28px;
+}
+
+.instructorsItems li{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-content: center;
+    column-gap: 21px;
+}
+
+.instructorsItems h3{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    grid-column: 2/3;
+    margin: 0;
+    margin-top: 13px;
+}
+
+.instructorsItems .techerPhoto{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.instructorsItems img{
+    display: block;
+}
+
+.instructorsItems .role{
+    margin: 0;
+    color: #999999;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: -23px;
+}
+
+
+
+
+
+
+/* -----------------------------------renewalSeries---------------------------------- */
+
+.renewalSeries{
+    background-color: #f8f7fc;
+}
+
+.renewalSeries .container{
+    min-height: 681px;
+}
+
+.renewalSeries p{
+    margin-top: 21px;
+    margin-bottom: 38px;
+    font-size: 21px;
+    font-family: "Lato";
+    color: #8ea2dc;
+    line-height: 36px;
+}
+
+.renewalSeries .takeChallenge{
+    display: inline-block;
+    background-color: #7492ec;
+    border-radius: 20px;
+    height: 40px;
+    padding-top: 16px;
+    padding-left: 37px;
+    padding-right: 39px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+}
+
+.renewalSeries .illustration{
+    height: 681px;
+    margin: 0;
+    float: right;
+    margin-top:  -65px;
+    margin-right: 113px;
+}
+
+.renewalSeries .indexColumnLeft{
+    width: 500px;
+    padding-top: 252px;
+    margin-left: 187px;
+}
+
+
+
+
+
+/* -----------------------------------sponsors------------------ */
+
+.sponsors{
+    background: #ffffff;
+}
+
+.sponsorsItems{
+    padding: 0 ;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 236px;
+    /* justify-items: center;  но мне кажется так лучше  */
+    align-items: center;
+}
+
+.sponsorsItems li{
+    margin-top: 9px;
+}
+
+.sponsorsItems li:nth-child(5n+1){
+    justify-self: start;
+}
+
+.sponsorsItems li:nth-child(5n+2){
+    justify-self: start;
+    margin-left: 38px;
+}
+
+.sponsorsItems li:nth-child(5n+3){
+    justify-self: center;
+}
+
+.sponsorsItems li:nth-child(5n+4){
+    justify-self: end;
+    margin-right: 34px;
+}
+
+.sponsorsItems li:nth-child(5n+5){
+    justify-self: end;
+}
+
+
+
+
+
+
+/* -----------------------------------------footer---------------------------------- */
+
+.mainFooter{
+    background-color: #222222;
+    color: #bbbbbb;
+}
+
+.mainFooter h2{
+    color: #FFFFFF;
+}
+
+.mainFooter a{
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------indexRow1--------------------------------------------- */
+.mainFooter > .indexRow1{
+    background-color: #181818;
+    border-bottom: 1px solid #333333;
+}
+
+.mainFooter > .indexRow1 .container{
+    height: 110px;
+    display: flex;
+
+}
+
+.mainFooterLogo{
+   padding: 22px 209px 26px 0;
+   border-right: 1px solid #333333;
+   margin-left: -3px;
+}
+
+.NewsletterSubscription{
+    padding: 32px 0 29px 46px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    width: 903px;
+}
+
+.NewsletterSubscription h2{
+    margin-top: -1px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.NewsletterSubscription em{
+    margin-top: -8px;
+    font-size: 13px;
+    font-family: "Lato";
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.formNewsletterSubscription{
+    grid-row: 1/3;
+}
+
+.formNewsletterSubscription input{
+    height: 50px;
+    padding: 21px 0 20px 21px;
+    background-color: #333333;
+    border: none;
+    width: 350px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-family: "Lato";
+    margin-right: -84px;
+}
+
+.formNewsletterSubscription input:focus{
+    outline: none;
+}
+
+.formNewsletterSubscription button[type="submit"]{
+    height: 50px;
+    padding: 19px 39px 20px 38px;
+    background-color: #7492ec;
+    border: none;
+    width: 140px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ------------------------------------------indexRow2--------------------------------------------- */
+
+
+.mainFooter > .indexRow2 > .container{
+    padding-top: 60px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainFooter > .indexRow2 h2{
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 18px;
+}
+
+.mainFooter > .indexRow2 a{
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.mainFooter .contactUs h2{
+    margin-top: -1px;
+}
+
+.mainFooter .contactUs{
+    margin-left: 1px;
+}
+
+
+.mainFooter > .indexRow2 address{
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: "Lato", Arial, sans-serif;
+}
+
+.mainFooter .email{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.mainFooter .tel{
+    margin-bottom: 10px;
+}
+
+.socialNetworks{
+    width: 181px;
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    gap: 7px;
+    grid-auto-rows: 40px;
+}
+
+.socialNetworks a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.socialNetworks .facebook{
+    background-color: #365493;
+    background-image: url('../img/facebook logo.png');
+}
+
+.socialNetworks .twitter{
+    background-color: #33ccff;
+    background-image: url('../img/twitter logo.png');
+}
+
+.socialNetworks .google{
+    background-color: #d44132;
+    background-image: url('../img/google+ logo.png');
+}
+
+.socialNetworks .pinterest{
+    background-color: #cb2027;
+    background-image: url('../img/pinterest logo.png');
+}
+
+.usefulLinks{
+    margin-left: 0;
+}
+
+.usefulLinksNavigation ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.openHoursItems{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.openHoursItems li{
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.openHoursItems p{
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.openHoursItems .timeRange{
+    width: 73px;
+    display: flex;
+}
+
+.openHoursItems .dayWeek{
+    position: relative;
+}
+
+.openHoursItems .dayWeek::before{
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 5px;
+    background-repeat: no-repeat;
+    background-position: left 11px;
+    background-image: url('../img/arrow 3.png');
+    top: 0;
+    left: 120px;
+}
+
+
+.mainFooter .location h2{
+  margin-bottom: 25px;
+}
+
+.mainFooter .location img{
+  border-radius: 5px;
+}
+
+
+
+
+/* -------------------------------------indexRow3-------------------------- */
+
+.mainFooter > .indexRow3{
+    background-color: #181818;
+    height: 80px;
+}
+
+.mainNavigationAlistudio{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoAlistudio{
+    padding-top: 35px;
+    line-height: 11px;
+    font-size: 11px;
+}
+
+.NavigationAlistudio{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.NavigationAlistudio a{
+    color: #999999;
+    padding-top: 36px;
+    padding-bottom: 32px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    display: block;
+    text-transform: uppercase;
+    margin-left: 23px;
+}
+
+.mainNavigationAlistudioCurrent a{
+    color: #ffffff;
+}
+
+
+
+
+/* -------------------------------------------inner styles------------------------------- */
+.innerPage{
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image: url('../img/inner background.png');
+}
+
+.innerPage .mainHeader{
+    background: none;
+    height: auto;
+    margin-bottom: 165px;
+}
+
+.innerPage > main > .container > h1{
+    font-size: 71px;
+    color: #7492ec;
+    font-weight: 300;
+    margin: 0;
+    line-height: 90px;
+}
+
+.innerPage > main > .container > p{
+    color: #99aade;
+    margin: 0;
+    margin-top: 7px;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+
+
+
+/* ------------------------------------- classesPage-----------------------------*/
+
+.classesPage > main > .container{
+    display: grid;
+    justify-content: space-between;
+    grid-template-rows: 90px 211px;
+    padding-bottom: 88px;
+}
+
+.classesPage > main > .container > p{
+    grid-row: 2/3;
+}
+
+.classesPage > main > .container > img{
+    display: grid;
+    grid-row: 1/3;
+    align-self: end;
+    justify-self: end;
+}
+
+.classesPage .classesItems{
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-row: 3/4;
+    grid-column: 1/3;
+    row-gap: 49px;
+    margin-top: 89px;
+}
+
+
+
+
+/* -------------------------------classesSinglePage-------------------------------------------- */
+
+
+.classesSinglePage > main > .container > h1{
+    font-size: 29px;
+    line-height: 48px;
+    margin-top: 209px;
+}
+
+.classesSinglePage > main > .container > p{
+    color: #99aade;
+    margin: 0;
+    margin-top: 5px;
+    width: 416px;
+}
+
+.classesSingleDescription{
+    font-family: 'Lato', Arial, sans-serif;
+    padding-top: 118px;
+    padding-bottom: 120px;
+}
+
+.classesSingleDescription .container{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+
+.classesSingleDescription .indexColumnLeft{
+    margin-top: 41px;
+    align-self: center;
+}
+
+.classesSingleDescription .info{
+    color: #999999;
+    font-size: 13px;
+    line-height: 14px;
+    display: flex;
+}
+
+.classesSingleDescription .info p{
+    position: relative;
+    padding-left: 24px;
+    margin: 0;
+    margin-right: 29px;
+
+}
+
+.classesSingleDescription .info p:last-child{
+    margin-right: 0px;
+}
+
+.classesSingleDescription .info .share{
+    padding-left: 0;
+}
+
+.classesSingleDescription .info .share a{
+    color: inherit;
+    position: relative;
+    padding-left: 24px;
+}
+
+.classesSingleDescription .video{
+    justify-self: end;
+}
+
+.classesSingleDescription .description{
+    margin: 0;
+    margin-top: 21px;
+}
+
+.benefits{
+    padding-top: 126px;
+    padding-bottom: 120px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #f1f3f8;
+    background-image: url('../img/decoration flower our classes.png');
+}
+
+.benefits h2{
+    text-align: center;
+    margin-bottom: 82px;
+}
+
+.benefitsItems{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    --colorOfTextBenefitH3: #000;
+    --colorOfTextBenefitDescription: #666666;
+}
+
+.benefitsItems li{
+    padding: 40px 32px 32px 34px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.02);
+}
+
+.benefitsItems li:hover{
+    --colorOfTextBenefitH3: #ffffff;
+    --colorOfTextBenefitDescription: #ffffff;
+    background-color: #7492ec;
+}
+
+.benefits h3 {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--colorOfTextBenefitH3);
+    font-weight: 500;
+}
+
+.benefitDescription{
+    margin: 0;
+    font-family: 'Lato', Arial, sans-serif;
+    color: var(--colorOfTextBenefitDescription);
+}
+
+
+
+
+
+
+.relatedClasses{
+    padding-top: 126px;
+    padding-bottom: 89px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image: url('../img/decoration flower our classes.png');
+}
+
+.relatedClasses .container{
+    position: relative;
+}
+
+.relatedClasses h2{
+    text-align: center;
+}
+
+
+
+
+
+
+/* -------------------------------------about us------------------------------------------- */
+
+.aboutUsDescription{
+    padding-top: 41px;
+    margin-bottom: -7px;
+}
+
+.aboutUsDescription .indexColumns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUsDescription .indexColumnLeft{
+    width: 521px;
+    margin-top: 207px;
+}
+
+.aboutUsDescription .description{
+    font-family: 'Lato', Arial, sans-serif;
+    margin: 0;
+}
+
+.aboutUsDescription .indexColumnRight{
+    margin-right: -60px;
+}
+
+
+.MyriamJessierQuote{
+    min-height: 400px;
+    background-image: linear-gradient(to top, rgba(116,146,236,0.8), rgba(116,146,236,0.8)), url('../img/road background.jpg');
+    background-position: 0, center -467px;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding-top: 164px;
+
+}
+
+.MyriamJessierQuote blockquote{
+    width: 616px;
+    font-style: italic;
+    font-family: 'Droid Serif', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 41px;
+}
+
+.MyriamJessierQuote cite{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+
+
+.varietiesOfYoga{
+    padding-top: 120px;
+    background-repeat: no-repeat;
+    background-image: url('../img/half bottom flower.png');
+    padding-bottom: 99px;
+
+    background-position: top right 484px;
+}
+
+.varietiesOfYogaItems{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.varietiesOfYogaItems li{
+    width: 370px;
+    display: grid;
+    grid-template-rows: 270px 46px min-content;
+    grid-template-rows: subgrid;
+}
+
+.varietiesOfYogaItems li .linkClassSingle{
+    margin-top: 31px;
+}
+
+.varietiesOfYogaItems li p{
+    margin-top: 23px;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+.varietiesOfYogaItems li img{
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+.testimonials{
+    padding-top: 123px;
+    padding-bottom: 114px;
+    background-color: #e5eaf7;
+}
+
+.testimonialsItems{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.testimonialsItems article h1{
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    color: #7492ec;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.testmonial{
+    font-size: 16px;
+    color: #99aade;
+    width: 582px;
+    font-family: 'Lato', Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 21px;
+}
+
+.testimonialsItems article img{
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.testimonialsItems article .name{
+    margin: 0;
+    text-align: center;
+    color: #7492ec;
+    font-weight: 600;
+    margin-bottom: -3px;
+}
+
+.testimonialsItems article .role{
+    margin: 0;
+    font-size: 12px;
+    color: #99aade;
+    font-family: 'Lato', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.testimonialsNumber{
+    border: none;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 94px;
+}
+
+.testimonialsNumber label{
+    width: 8px;
+    height: 8px;
+    background-color: #ced8f5;
+    border-radius: 50%;
+}
+
+.testimonialsNumber input:checked + label{
+    background-color: #7492ec;
+}
+
+.achievements{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.achievements li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievements p{
+    color: #7492ec;
+    font-family: 'Droid Serif', Arial, sans-serif;
+    font-size: 42px;
+    line-height: 42px;
+    margin: 0;
+    margin-bottom: 11px;
+}
+
+.achievements h3{
+    color: #99aade;
+    margin: 0;
+    font-family: 'Lato', Arial, sans-serif;
+    order: 1;
+}
+
+
+
+.freeTrial{
+    padding-top: 115px;
+    padding-bottom: 114px;
+}
+
+.freeTrial h2{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.freeTrial p{
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+}
+
+.freeTrial .getFreeTrial{
+    width: 297px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* ---------------------------------------pricing--------------------------------------- */
+
+.pricingPage > main > .container > p{
+    margin-top: 8px;
+    width: 386px;
+}
+
+.pricing{
+    padding-top: 228px;
+    padding-bottom: 149px;
+}
+
+.pricingItems{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.pricingItems li{
+    display: flex;
+    width: 270px;
+    flex-direction: column;
+}
+
+.pricingItems .pricePer{
+    margin: 0;
+    order: -1;
+    color: #999999;
+    font-family: 'Lato', Arial, sans-serif;
+    width: 270px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
+}
+
+.pricingItems .pricePer .price{
+    color: #7492ec;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.pricingItems h3{
+    color: #7492ec;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.pricingItems .description{
+    font-family: 'Lato', Arial, sans-serif;
+    margin: 0;
+    width: 270px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 28px;
+    margin-bottom: 40px;
+}
+
+.book{
+    width: 140px;
+}
+
+.pricingPage .renewalSeries{
+    padding-top: 177px;
+    height: 681px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-image: url('../img/background renewalseries 2017.jpg');
+}
+
+.pricingPage .renewalSeries p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8ea2dc;
+    font-family: 'Lato', Arial, sans-serif;
+    width: 444px;
+    margin-top: 24px;
+    margin-bottom: 34px;
+}
+
+.pricingPage .renewalSeries a{
+    width: 213px;
+    display: block;
+    text-align: center;
+    font-family: 'Lato', Arial, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------contact us---------------------------------------- */
+
+.contactPage{
+    background-repeat: no-repeat;
+    background-image: url('../img/inner background.png'), url('../img/half bottom flower.png');
+    background-position: top, right 234px top 128px;
+}
+
+.contactPage > main > .container > .indexColumns{
+    padding-top: 193px;
+    padding-bottom: 115px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contactPage > main > .container > p{
+    width: 397px;
+}
+
+.contactUsform{
+    width: 570px;
+    display: grid;
+    grid-template-columns: 270px 270px;
+    grid-template-rows: 50px 50px 210px 50px;
+    gap: 30px;
+}
+
+.contactUsform input,
+.contactUsform textarea{
+    color: #999999;
+    border: 1px solid #eeeeee;
+    font-size: 13px;
+    line-height: 13px;
+    font-family: 'Lato', Arial, sans-serif;
+    padding-left: 18px;
+    border-radius: 5px;
+}
+
+.contactUsform input{
+    height: 50px;
+    width: 270px;   
+}
+
+.contactUsform textarea{
+    min-height: 210px;
+    padding-top: 20px;
+    grid-column: 1/-1;
+}
+
+.contactUsform textarea::-webkit-resizer{
+    display: none;
+}
+
+.contactUsform .buttonSend{
+    letter-spacing: 2px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #7492ec;
+    border: none;
+    color: #ffffff;
+    grid-column: 1/-1;
+}
+
+
+.contacts{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 270px 270px;
+}
+
+.contacts li{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts img{
+    order: -1;
+}
+
+.contacts h3{
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 26px;
+    margin-bottom: 15px;
+}
+
+.contacts address{
+    font-style: normal;
+    font-size: 12px;
+    width: 200px;
+}
+
+.contacts address a{
+    display: block;
+    color: #666666;
+}
+
+.contacts address .tel{
+    color: #7492ec;
+}
+
+.contacts address .email{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.contactPage .testimonialsNumber{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: -31px;
+    top: 319px;
+    gap: 7px;
+    margin-bottom: 0px;
+}
+
+.contactPage .mainFooterLogo{
+    padding: 22px 0 26px 0;
+    width: 270px;
+}
+
+.footerTitle{
+    color: #7492ec;
+    vertical-align: 26px;
+    margin-left: 17px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
