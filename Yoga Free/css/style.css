@@ -21,9 +21,9 @@
     /* Браузер сначала попробует найти шрифт локально */
     src: local('Droid Serif'), local('DroidSerif'),
     /* Если не получилось, загрузит woff2 */
-    url('../fonts/droidser.woff2') format('woff2'),
+    url('../fonts/droidserif.woff2') format('woff2'),
     /* Если браузер не поддерживает woff2, загрузит woff */
-    url('../fonts/droidser.woff') format('woff');
+    url('../fonts/droidserif.woff') format('woff');
 }
 
 
