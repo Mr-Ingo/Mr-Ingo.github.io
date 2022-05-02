@@ -1006,7 +1006,7 @@ a{
 /* -------------------------------------------inner styles------------------------------- */
 .innerPage{
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top left;
     background-image: url('../img/inner background.png');
 }
 
