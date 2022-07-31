@@ -25,6 +25,10 @@ input[type='radio'].visuallyHidden{
 }
 
 body{
+    overflow-x: hidden;
+}
+
+.bodyContainer{
     width: 1440px;
     margin: 0 auto;
     font-family: 'Poppins';
@@ -35,9 +39,19 @@ body{
     line-height: 24px;
 }
 
+@media (max-width: 1440px){
+    body{
+        overflow-x: visible;
+    }
+    .bodyContainer{
+        overflow-x: hidden;
+    }
+}
+
 main{
     padding-bottom: 148px;
     background-color: #fff;
+
 }
 
 a{
@@ -932,8 +946,6 @@ a{
     background-color: transparent;
     border: 1px solid #979797;
     border-radius: 100%;
-    width: 13px;
-    height: 13px;
     opacity: 0.8;
 }
 
