@@ -1,0 +1,237 @@
+*{
+    font-family: sans-serif;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 15px;
+}
+
+ul li{
+    padding-bottom:4px;
+}
+.orange{
+    color: orange;
+}
+.wrap{
+    background-image: url("./img/smuzi-banan-mandarin-2.jpg");
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-repeat: no-repeat; */
+    background-position: center top;
+    background-size:cover;
+}
+
+.main{
+   /* background-image: url("./img/0cfTl.jpg");  */
+}
+
+.content_wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+.header{
+    background-color: #ffffff50;
+    padding-bottom: 40px;
+}
+
+.gallery_item{
+    font-size: 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.par{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.zagl_1{
+    font-size: 64px;
+    color:orange;
+    text-align: center;
+    margin: 0 0 40px 0;
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.zagl_2{
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.zagl_3{
+    font-size: 36px;
+    text-align: center;
+}
+
+.zagl_4{
+    font-size: 20px;
+    line-height: 30px;
+    color: orange;
+    margin:0;
+    padding: 15px;
+}
+
+.pole_vvoda{
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.submit{
+    background: orange;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border: 3px solid rgba(53, 110, 173, 0.4);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.wrap_menu{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu{
+    display: flex;
+    max-width: 400px;
+    flex-grow: 1;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+.menu_item a{
+    padding: 25px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    
+    
+}
+.menu_item.activated a{
+    background-color: #ffffff4b;   
+    color: rgba(118, 104, 77, 0.995);
+}
+.menu_item a:hover{
+    background-color: #ffffff4b;
+    color: orange;
+}
+
+.logo{
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.footer{
+    background-color: #3a3a3a;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.footer .zagl_3{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.fio{
+    color: white;
+}
+
+.email{
+    color: white;
+    margin-bottom: 4px;
+}
+
+.email a{
+    color: inherit;
+}
+
+a:hover{
+    color: orange;
+}
+
+.footer hr{
+    margin-bottom: 50px;
+}
+
+.description{
+    max-width: 800px;
+}
+
+.predislovie{
+    font-size: 18px;
+    padding: 20px;
+    padding-bottom: 15px;
+}
+
+.adress_text{
+    padding: 0 15px;
+}
+
+/* .form_feedback{
+    margin-bottom: 30px;
+} */
+
+.form_form_feedback{
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_form_feedback .pole_vvoda{
+    max-width: 400px;
+}
+
+.form_form_feedback textarea{
+    min-height: 200px;
+}
+
+.form_form_feedback .submit{
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.map{
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery{
+    /* display: flex; */
+    padding: 15px;
+}
+
+@media screen and (max-width: 1068px) {
+  .footer{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
